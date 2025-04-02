@@ -16,36 +16,19 @@ public class ContactosApp {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        new ContactosApp().ejecutar();
+    }
+
+    private void ejecutar() {
         int opcion;
         do {
             mostrarMenu();
-            System.out.print("Seleccione una opcion: ");
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
-
-            switch (opcion) {
-                case 1:
-                    agregarContacto();
-                    break;
-                case 2:
-                    mostrarContactos();
-                    break;
-                case 3:
-                    buscarContacto();
-                    break;
-                case 4:
-                    eliminarContacto();
-                    break;
-                case 0:
-                    System.out.println("Saliendo...");
-                    break;
-                default:
-                    System.out.println("Opcion no valida.");
-            }
+            opcion = obtenerOpcion();
+            procesarOpcion(opcion);
         } while (opcion != 0);
     }
 
-    private static void mostrarMenu() {
+    private void mostrarMenu() {
         System.out.println("\nMenu:");
         System.out.println("1. Agregar contacto");
         System.out.println("2. Mostrar contactos");
@@ -54,7 +37,36 @@ public class ContactosApp {
         System.out.println("0. Salir");
     }
 
-    private static void agregarContacto() {
+    private int obtenerOpcion() {
+        System.out.print("Seleccione una opcion: ");
+        int opcion = scanner.nextInt();
+        scanner.nextLine(); // Limpiar buffer
+        return opcion;
+    }
+
+    private void procesarOpcion(int opcion) {
+        switch (opcion) {
+            case 1:
+                agregarContacto();
+                break;
+            case 2:
+                mostrarContactos();
+                break;
+            case 3:
+                buscarContacto();
+                break;
+            case 4:
+                eliminarContacto();
+                break;
+            case 0:
+                System.out.println("Saliendo...");
+                break;
+            default:
+                System.out.println("Opcion no valida.");
+        }
+    }
+
+    private void agregarContacto() {
         System.out.print("Ingrese nombre: ");
         String nombre = scanner.nextLine();
         System.out.print("Ingrese telefono: ");
@@ -63,7 +75,7 @@ public class ContactosApp {
         System.out.println("Contacto agregado exitosamente.");
     }
 
-    private static void mostrarContactos() {
+    private void mostrarContactos() {
         if (contactos.isEmpty()) {
             System.out.println("No hay contactos disponibles.");
         } else {
@@ -75,7 +87,7 @@ public class ContactosApp {
         }
     }
 
-    private static void buscarContacto() {
+    private void buscarContacto() {
         System.out.print("Ingrese nombre a buscar: ");
         String nombre = scanner.nextLine();
         boolean encontrado = false;
@@ -90,7 +102,7 @@ public class ContactosApp {
         }
     }
 
-    private static void eliminarContacto() {
+    private void eliminarContacto() {
         System.out.print("Ingrese nombre a eliminar: ");
         String nombre = scanner.nextLine();
         for (int i = 0; i < contactos.size(); i++) {

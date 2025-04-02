@@ -7,7 +7,7 @@ class Estudiante {
     String carrera;
 }
 
-public class Main {
+public class SistemaRegistroEstudiantesMetodo {
     static Scanner scanner = new Scanner(System.in);
     static Estudiante[] estudiantes = new Estudiante[100];
     static int numEstudiantes = 0;

@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class JuegoAdivinanza {
+public class JuegoAdivinanzaMetodo {
     private static final int INTENTOS_MAXIMOS = 5;
     private static final int LIMITE_INFERIOR = 1;
     private static final int LIMITE_SUPERIOR = 100;

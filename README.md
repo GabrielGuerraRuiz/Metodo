@@ -481,7 +481,29 @@ public class JuegoAdivinanzaMetodo {
 
 Con estas mejoras, la nueva versión del juego de adivinanza es más eficiente, organizada y fácil de mantener en comparación con la versión original.
 
+### Importancia de los métodos en nuestros programas
 
+Al comparar las versiones antiguas y mejoradas de los programas Sistema de Registro de Estudiantes y Juego de Adivinanza, se hace evidente la importancia de estructurar el código mediante métodos. La modularización del código es una de las mejores prácticas en programación, ya que permite una mayor organización, reutilización y mantenimiento del código.
+
+- **1. Claridad y Legibilidad**
+En la versión original de ambos programas, toda la lógica estaba concentrada en el main, lo que dificultaba la lectura y comprensión del código. En cambio, al dividir el código en métodos con funciones específicas, el flujo del programa se vuelve más claro y entendible.
+
+Por ejemplo, en la versión mejorada del Sistema de Registro de Estudiantes, la función registrarEstudiante() encapsula todo el proceso de registro, mientras que mostrarEstudiantes() se encarga exclusivamente de la visualización. Esto hace que el main sea más limpio y que cada método tenga una única responsabilidad.
+
+- **2. Reutilización del Código**
+El uso de métodos permite reutilizar fragmentos de código sin necesidad de repetir instrucciones. En el caso del Juego de Adivinanza, el método obtenerNumeroUsuario() se encarga de recibir y validar la entrada del usuario. Sin este método, la validación tendría que escribirse repetidamente dentro del while, lo que haría el código más largo y propenso a errores.
+
+En el Sistema de Registro de Estudiantes, el método encontrarEstudiante() facilita la búsqueda de un estudiante sin repetir la lógica en diferentes partes del código.
+
+- **3. Facilidad de Mantenimiento y Escalabilidad**
+Cuando un programa está estructurado con métodos bien definidos, cualquier modificación o corrección es mucho más sencilla. Si en el futuro se quiere cambiar la validación de entrada en el Juego de Adivinanza, basta con modificar obtenerNumeroUsuario(), en lugar de revisar múltiples partes del código.
+
+Asimismo, la versión mejorada del Sistema de Registro de Estudiantes permite agregar nuevas funcionalidades sin afectar la estructura general del programa. Por ejemplo, si se desea agregar una opción para actualizar los datos de un estudiante, se puede crear un nuevo método actualizarEstudiante() sin afectar el código existente.
+
+- **4. Separación de Responsabilidades**
+Cada método en la versión mejorada tiene una tarea específica, lo que facilita la depuración del código. Si ocurre un error en la eliminación de un estudiante, se puede revisar exclusivamente el método eliminarEstudiantePorMatricula() en lugar de revisar todo el código.
+
+En el Juego de Adivinanza, el método verificarNumero() separa la lógica de comparación del main, lo que hace que la estructura del programa sea más modular y fácil de entender.
 
 ## Instrucciones para compilar los programas (Java)
 ```sh

@@ -35,17 +35,27 @@ Este repositorio contiene tres programas diseñados para resolver problemas espe
 
 ## Índice
 1. [Descripción del Proyecto](#descripcion-del-proyecto)
+
 2. [Funcionalidad y estructura Gestor de Contactos antiguo](#funcionalidad-y-estructura-gestor-de-contactos-antiguo)
    - [Implementación de los métodos](#implementacion-de-los-metodos)
+
 3. [Funcionalidad y estructura final del Gestor de Contactos](#funcionalidad-y-estructura-final-del-gestor-de-contactos)
+
 4. [Funcionalidad y estructura Sistema Registros Estudiantes antiguo](#funcionalidad-y-estructura-sistema-registros-estudiantes-antiguo)
    - [Implementación de los métodos](#implementacion-de-los-metodos)
+
 5. [Funcionalidad y estructura final del Sistema Registros Estudiantes](#funcionalidad-y-estructura-final-del-sistema-registros-estudiantes)
+
 6. [Funcionalidad y estructura Juego Adivinanza antiguo](#funcionalidad-y-estructura-juego-adivinanza-antiguo)
    - [Implementación de los métodos](#implementacion-de-los-metodos)
+
 7. [Funcionalidad y estructura final del Juego Adivinanza](#funcionalidad-y-estructura-final-del-juego-adivinanza)
-8. [Instrucciones para compilar los programas (Java)](#instrucciones-para-compilar-los-programas-java)
-9. [Link del GitHub](#link-del-github)
+
+8. [Importancia de los métodos en nuestros programas](#Importancia-de-los-métodos-en-nuestros-programas)
+
+9. [Instrucciones para compilar los programas (Java)](#instrucciones-para-compilar-los-programas-java)
+
+10. [Link del GitHub](#link-del-github)
 
 ---
 
@@ -73,7 +83,6 @@ El gestor de contactos original estaba implementado en C y utilizaba memoria din
 
 Ejemplo de código en C:
 
-![Código en C - Menú](imagenes/c_menu.png)
 
 ```c
 void mostrarMenu() {
@@ -88,7 +97,6 @@ void mostrarMenu() {
 }
 ```
 
-![Código en C - Agregar Contacto](imagenes/c_agregar_contacto.png)
 
 ```c
 void agregarContacto(Contacto **contactos, int *numContactos) {
@@ -131,8 +139,6 @@ El gestor de contactos actualizado fue reescrito en Java, aprovechando la Progra
 
 Ejemplo de código en Java:
 
-![Código en Java - Menú](imagenes/java_menu.png)
-
 ```java
 private void mostrarMenu() {
     System.out.println("\nMenú:");
@@ -144,7 +150,6 @@ private void mostrarMenu() {
 }
 ```
 
-![Código en Java - Agregar Contacto](imagenes/java_agregar_contacto.png)
 
 ```java
 private void agregarContacto() {
@@ -191,7 +196,6 @@ El sistema original de registro de estudiantes estaba implementado en Java de fo
 
 Ejemplo de código en la versión antigua:
 
-![Código en Java - Menú](imagenes/java_menu_antiguo.png)
 
 ```java
 public static void main(String[] args) {
@@ -247,7 +251,6 @@ La versión mejorada sigue principios de Programación Orientada a Objetos, sepa
 
 Ejemplo de código en la versión nueva:
 
-![Código en Java - Menú](imagenes/java_menu_nuevo.png)
 
 ```java
 public static void ejecutar() {
@@ -280,7 +283,6 @@ public static void ejecutar() {
 }
 ```
 
-![Código en Java - Registro](imagenes/java_registro.png)
 
 ```java
 private static Estudiante crearEstudiante() {
@@ -488,22 +490,22 @@ Al comparar las versiones antiguas y mejoradas de los programas Sistema de Regis
 - **1. Claridad y Legibilidad**
 En la versión original de ambos programas, toda la lógica estaba concentrada en el main, lo que dificultaba la lectura y comprensión del código. En cambio, al dividir el código en métodos con funciones específicas, el flujo del programa se vuelve más claro y entendible.
 
-Por ejemplo, en la versión mejorada del Sistema de Registro de Estudiantes, la función registrarEstudiante() encapsula todo el proceso de registro, mientras que mostrarEstudiantes() se encarga exclusivamente de la visualización. Esto hace que el main sea más limpio y que cada método tenga una única responsabilidad.
+-Por ejemplo, en la versión mejorada del Sistema de Registro de Estudiantes, la función registrarEstudiante() encapsula todo el proceso de registro, mientras que mostrarEstudiantes() se encarga exclusivamente de la visualización. Esto hace que el main sea más limpio y que cada método tenga una única responsabilidad.
 
 - **2. Reutilización del Código**
 El uso de métodos permite reutilizar fragmentos de código sin necesidad de repetir instrucciones. En el caso del Juego de Adivinanza, el método obtenerNumeroUsuario() se encarga de recibir y validar la entrada del usuario. Sin este método, la validación tendría que escribirse repetidamente dentro del while, lo que haría el código más largo y propenso a errores.
 
-En el Sistema de Registro de Estudiantes, el método encontrarEstudiante() facilita la búsqueda de un estudiante sin repetir la lógica en diferentes partes del código.
+-En el Sistema de Registro de Estudiantes, el método encontrarEstudiante() facilita la búsqueda de un estudiante sin repetir la lógica en diferentes partes del código.
 
 - **3. Facilidad de Mantenimiento y Escalabilidad**
 Cuando un programa está estructurado con métodos bien definidos, cualquier modificación o corrección es mucho más sencilla. Si en el futuro se quiere cambiar la validación de entrada en el Juego de Adivinanza, basta con modificar obtenerNumeroUsuario(), en lugar de revisar múltiples partes del código.
 
-Asimismo, la versión mejorada del Sistema de Registro de Estudiantes permite agregar nuevas funcionalidades sin afectar la estructura general del programa. Por ejemplo, si se desea agregar una opción para actualizar los datos de un estudiante, se puede crear un nuevo método actualizarEstudiante() sin afectar el código existente.
+- Asimismo, la versión mejorada del Sistema de Registro de Estudiantes permite agregar nuevas funcionalidades sin afectar la estructura general del programa. Por ejemplo, si se desea agregar una opción para actualizar los datos de un estudiante, se puede crear un nuevo método actualizarEstudiante() sin afectar el código existente.
 
 - **4. Separación de Responsabilidades**
 Cada método en la versión mejorada tiene una tarea específica, lo que facilita la depuración del código. Si ocurre un error en la eliminación de un estudiante, se puede revisar exclusivamente el método eliminarEstudiantePorMatricula() en lugar de revisar todo el código.
 
-En el Juego de Adivinanza, el método verificarNumero() separa la lógica de comparación del main, lo que hace que la estructura del programa sea más modular y fácil de entender.
+- En el Juego de Adivinanza, el método verificarNumero() separa la lógica de comparación del main, lo que hace que la estructura del programa sea más modular y fácil de entender.
 
 ## Instrucciones para compilar los programas (Java)
 ```sh

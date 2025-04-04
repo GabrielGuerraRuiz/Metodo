@@ -552,5 +552,6 @@ java NombreDelPrograma
 ---
 
 ## Link del GitHub
-[Repositorio del Proyecto](https://github.com/GabrielGuerraRuiz/Metodo/tree/main)
-
+https://github.com/GabrielGuerraRuiz/Metodo/tree/main
+## Link del Planner
+https://planner.cloud.microsoft/webui/plan/qbHJ4qmgF0Wlg-NA89ygf2QAErx6/view/grid?tid=f94bf4d9-8097-4794-adf6-a5466ca28563

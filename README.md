@@ -183,6 +183,18 @@ private void agregarContacto() {
 
 Con estos cambios, la versión en Java ofrece una solución más robusta y fácil de mantener en comparación con la implementación original en C.
 
+### Capturas del funcionamiento
+#### Función: Agregar contacto
+![image](https://github.com/user-attachments/assets/03926e30-3962-4fc6-ba96-7059a0912ec2)
+#### Función: Mostrar contactos
+![image](https://github.com/user-attachments/assets/5ac0b862-148c-4f3f-b948-d92e6a75f670)
+#### Función: Buscar contacto
+![image](https://github.com/user-attachments/assets/c4d3fc80-5417-4afa-a7bd-a4aea8bb3421)
+#### Función: Eliminar contacto
+![image](https://github.com/user-attachments/assets/6f2b9a55-bf11-4767-8f1b-b7fce6b63f16)
+#### Función: Salir del programa
+![image](https://github.com/user-attachments/assets/8c5fafbc-8573-4573-a89a-6df551817707)
+
 
 # Comparación de Versiones: Sistema de Registro de Estudiantes
 
@@ -320,6 +332,19 @@ private static Estudiante crearEstudiante() {
 - **Mejor separación de responsabilidades**: funciones específicas para cada tarea.
 
 Con estas mejoras, el nuevo sistema es más robusto, flexible y fácil de mantener, proporcionando una mejor solución en comparación con la versión original.
+
+### Capturas del funcionamiento
+#### Función: Registrar Estudiante
+![image](https://github.com/user-attachments/assets/deb64e57-0f01-4037-9cf6-5ebcf0c974b4)
+#### Función: Mostrar estudiantes
+![image](https://github.com/user-attachments/assets/b19dd115-20d3-4009-8f3c-33369acc5c55)
+#### Función: Buscar estudiante
+![image](https://github.com/user-attachments/assets/1503db95-9aa1-4994-9819-d06d30d3d763)
+#### Función: Eliminar estudiante
+![image](https://github.com/user-attachments/assets/9daf78be-6725-460a-a3ef-01b0a931191d)
+#### Función: Salir del programa
+![image](https://github.com/user-attachments/assets/b51648d9-74cb-4c0a-ac7d-6fb373094d72)
+
 
 
 # Comparación de Versiones: Juego de Adivinanza
@@ -483,6 +508,17 @@ public class JuegoAdivinanzaMetodo {
 
 Con estas mejoras, la nueva versión del juego de adivinanza es más eficiente, organizada y fácil de mantener en comparación con la versión original.
 
+### Capturas del funcionamiento
+#### Caso 1: El jugador pierde
+![image](https://github.com/user-attachments/assets/313804db-a2b2-42fd-b9ec-50efca2cfaed)
+#### Caso 2: El jugador gana
+![image](https://github.com/user-attachments/assets/e0776c69-9a28-4d02-a5bf-6a1e9e43a6e4)
+#### Caso 3: El jugador ingresa un número fuera del rango
+![image](https://github.com/user-attachments/assets/4516ea75-e066-4224-8f39-2927dc4bcb4e)
+
+
+----------------------------------------------------------------
+
 ### Importancia de los métodos en nuestros programas
 
 Al comparar las versiones antiguas y mejoradas de los programas Sistema de Registro de Estudiantes y Juego de Adivinanza, se hace evidente la importancia de estructurar el código mediante métodos. La modularización del código es una de las mejores prácticas en programación, ya que permite una mayor organización, reutilización y mantenimiento del código.
@@ -516,5 +552,5 @@ java NombreDelPrograma
 ---
 
 ## Link del GitHub
-[Repositorio del Proyecto](https://github.com/GabrielGuerraRuiz)
+[Repositorio del Proyecto](https://github.com/GabrielGuerraRuiz/Metodo/tree/main)
 

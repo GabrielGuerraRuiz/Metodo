@@ -9,7 +9,7 @@ Este repositorio contiene tres programas diseñados para resolver problemas espe
 
 2. **SistemaRegistroEstudiantesMetodo.java**: El programa es un sistema de registro de estudiantes en Java que permite realizar las siguientes operaciones: registrar nuevos estudiantes, mostrar la lista de estudiantes registrados, buscar un estudiante por su matrícula, y eliminar un estudiante por matrícula. Utiliza un arreglo para almacenar hasta 100 estudiantes y un menú interactivo para que el usuario seleccione las opciones. Cada estudiante tiene atributos como nombre, edad, matrícula y carrera.
 
-3. **Programa 3**: Breve descripción del propósito del programa.
+3. **GestorDeContactos**: El programa es un registro de contactos telefónicos en Java que nos deja registrar el nombre y el número telefónico, además de mostrar los números registrados (junto a su nombre), buscar el contacto por el nombre, eliminar el contacto, y salir del programa.
 
 ## Instalación
 
